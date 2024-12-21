@@ -1,0 +1,110 @@
+.event-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(197, 131, 255);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: stretch;
+    /* background-color: #fff; */
+}
+
+.event-form__h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.event-form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"], input[type="date"], input[type="time"], textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid rgb(197, 131, 255);
+    border-radius: 10px;
+    outline: none;
+    color: rgb(69, 69, 69);
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus, textarea:focus {
+    border-color: rgb(160, 105, 210);
+    box-shadow: 0 0 4px rgb(160, 105, 210);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.event-form__hr {
+    margin-top: 10px;
+    border: none;
+    border-top: 2px solid rgb(197, 131, 255);
+    width: 100%;
+}
+
+.event-form__submit {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgb(145, 55, 230);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.event-form__submit:hover {
+    background-color:rgb(197, 131, 255);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .event-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .event-form__h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"], textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .event-form__submit {
+        font-size: 16px;
+    }
+}

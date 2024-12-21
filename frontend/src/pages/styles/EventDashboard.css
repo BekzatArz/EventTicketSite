@@ -1,0 +1,127 @@
+.eventDashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Контейнер занимает всю ширину */
+    position: relative;
+    padding: 10px;
+}
+
+.userList {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(197, 131, 255);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 800px; /* Ограничиваем ширину */
+    padding: 10px;
+    margin: 0 auto;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку, если контент слишком широкий */
+}
+
+.userCard {
+    display: flex;
+    flex-wrap: wrap; /* Элементы переносятся при нехватке места */
+    justify-content: space-around; /* Пространство равномерно распределено */
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.userCard div {
+    flex: 1; /* Равномерное распределение ширины */
+    min-width: 100px; /* Минимальная ширина элемента */
+    max-width: 150px; /* Максимальная ширина элемента */
+    word-wrap: break-word; /* Скрытие текста за границами */
+}
+
+.userCard:last-child {
+    border-bottom: none; /* Убираем границу у последнего элемента */
+}
+
+.userListContainer {
+    width: 100%;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку для контейнера */
+}
+
+.user_name {
+    display: flex;
+    flex-direction: column; /* Имя и фамилия отображаются вертикально */
+    flex: 1;
+    max-width: 150px;
+}
+
+.userStatus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+.tabButtons {
+    display: flex;
+    gap: 5px;
+}
+select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    max-width: 150px; /* Ограничиваем ширину селекта */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.userCard div:nth-child(4) {
+    font-style: italic;
+    color: #b8b8b8;
+}
+
+.userListContainer button {
+    padding: 3px 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: #9000ea;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.userListContainer button:hover {
+    background-color: #6500a9;
+}
+.eventUsersActive {
+    border: 2px solid white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .userCard {
+        flex-direction: column; /* На маленьких экранах элементы располагаются вертикально */
+        align-items: center;
+    }
+
+    .userCard div {
+        max-width: 100%; /* Элементы занимают всю доступную ширину */
+        white-space: normal; /* Текст переносится на новую строку */
+        overflow: visible; /* Убираем ограничение текста */
+    }
+
+    select {
+        width: 100%; /* Селект занимает всю ширину */
+    }
+}
+
+@media (max-width: 480px) {
+    .userCard div {
+        font-size: 12px; /* Уменьшаем шрифт для узких экранов */
+    }
+
+    .userList {
+        width: 100%; /* Контейнер занимает всю ширину */
+        padding: 5px; /* Уменьшаем внутренний отступ */
+    }
+
+    select {
+        padding: 6px;
+    }
+}

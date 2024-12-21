@@ -1,0 +1,18 @@
+.notify {
+    background-color: rgb(255, 0, 0);
+    width: 16%;
+    scale: 1.2;
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    color: white;
+    position: fixed;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 2%;
+    opacity: .9;
+    right: 1%;
+    display: block;
+    z-index: 100;
+}

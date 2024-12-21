@@ -1,0 +1,57 @@
+{
+    "header":{
+        "events": "Events",
+        "my-tickets": "My Tickets",
+        "myEvents": "My Events",
+        "addEvent":"New Event"
+    },
+    "welcome":{
+        "welcomeToSite": "Welcome to Site Tickets.com"
+    },
+    "form" : {
+        "formH1": "Registration Form",
+        "firstName": "First Name",
+        "phoneNumber": "Phone Number",
+        "lastName": "Last Name",
+        "companyName": "The Name of Company",
+        "email": "Email",
+        "password": "Password",
+        "submitRegBtn": "Sign Up",
+        "submitLogBtn": "Sign In",
+        "howToSignIn": "How do You Want to Sign In?",
+        "howToSignUp": "How do You Want to Sign Up?",
+        "requiredFirstName": "First Name is required",
+        "requiredLastName": "Last Name is required",
+        "requiredEmail": "Email is required",
+        "requiredPassword": "Password is required",
+        "invalidEmail": "Invalid Email Address",
+        "invalidPassword": "Password must be at least 6 characters",
+        "accountLogPrompt": "Already have an account?",
+        "accountRegPrompt": "Don't have an account yet?"
+    },
+    "addEvent": {
+        "addEventH1": "Add New Event",
+        "eventNameLabel": "Name of the Event:",
+        "eventNamePlaceholder": "Enter name...",
+        "eventDescriptionLabel": "Event's description:",
+        "eventDescriptionPlaceholder": "Enter description...",
+        "eventPreviewLabel": "Add Preview for Event :",
+        "eventDateLabel": "Date of the Event:",
+        "startTimeLabel": "What time will the Event start?:",
+        "endTimeLabel": "What time will the Event end?:",
+        "eventPriceLabel": "How much will the visit cost?",
+        "eventPricePlaceholder": "Enter price...",
+        "eventAddressLabel": "Enter the Address of Event",
+        "eventAddressPlaceholder": "Enter adress...",
+        "submitButton": "Add Event"
+    },
+    "pageInfo": {
+        "loading": "Loading...",
+        "events": "Events",
+        "soms": "soms"
+    },
+    "notify": {
+        "eventCreated": "Event created successfully",
+        "bookConfirm": "Reservation requested!"
+    }
+}

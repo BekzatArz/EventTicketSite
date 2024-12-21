@@ -1,0 +1,25 @@
+.event__ticketStatus {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .event__ticketStatus--pending {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+  }
+  
+  .event__ticketStatus--confirmed {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .event__ticketStatus--canceled {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  

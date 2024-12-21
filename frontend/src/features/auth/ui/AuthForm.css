@@ -1,0 +1,129 @@
+.auth-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.welcome-to-site {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    max-width: 70%;
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    background-color: rgb(140, 0, 228);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    width: 100%; 
+    max-width: 400px; 
+    animation: slideIn 0.5s forwards;
+}
+
+.auth-form__h1 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.auth-form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    width: 100%;
+}
+
+.auth-form__inputs label {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+    margin-bottom: 2px; 
+    align-self: flex-start; 
+}
+
+.auth-form__input {
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    /* margin: 0;  */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+    width: 100%; 
+    background-color: white;
+}
+
+.auth-form__input:focus {
+    border: 1px solid #7f3cc1;
+    background-color: #f9f9ff; 
+}
+
+.auth-form__button {
+    margin-top: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+.toggle-auth__btn.selected {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.auth-form__button:hover {
+    background-color: #231231;
+}
+.how-auth__text{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-form__toggle-auth {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.toggle-auth__btn {
+    background-color: transparent;
+    user-select: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.toggle-auth__btn:hover {
+    cursor: pointer;
+}
+
+.auth-form__toggle-mode {
+    margin-top: 20px;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

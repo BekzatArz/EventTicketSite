@@ -1,0 +1,63 @@
+.header {
+    width: 70%;
+    /* margin: 0 auto; */
+    display: flex;
+    top: 18px;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 10;
+}
+.header__nav {
+    margin: 8px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 87px;
+    /* background-color: rgb(97, 5, 122); */
+}
+
+.header__nav-links {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative; /* Для ::after */
+    transition: color 0.3s ease; /* Для плавного изменения цвета текста */
+    transition: .2s;
+}
+
+.header__nav-links::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Расстояние от текста до линии */
+    left: 0;
+    width: 0;
+    height: 2px; /* Толщина линии */
+    background-color: rgb(255, 255, 255); /* Цвет линии */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header__nav-links:hover {
+    color: rgb(255, 255, 255); /* Изменение цвета текста при наведении */
+    scale: 1.1;
+    transition: .2s;
+}
+
+.header__nav-links:hover::after {
+    width: 100%; /* Линия растягивается на всю ширину текста */
+    left: 0; /* Линия стартует с начала текста */
+}
+
+.profile-icon {
+    position: absolute;
+    right: 1px;
+    border-radius: 20px;
+}
+.profile-icon:hover{
+    cursor: pointer;
+}
+.profile-icon__menu {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}

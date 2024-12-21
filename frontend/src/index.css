@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #944dd2; 
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.app {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  -webkit-tap-highlight-color: transparent;
+}
+svg {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #036fe3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:active {
+  background-color: #0056b3;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    background-color: #0056b3;
+
+  }
+  .eventCard:hover {
+    transform: scale(1.05);
+}
+}

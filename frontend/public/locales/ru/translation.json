@@ -1,0 +1,57 @@
+{   
+    "header":{
+        "events": "События",
+        "my-tickets": "Мои Билеты",
+        "myEvents": "Мои События",
+        "addEvent":"Новое Событие"
+    },
+    "welcome":{
+        "welcomeToSite": "Добро пожаловать на сайт бронирования билетов на разные мероприятия"
+    },
+    "form" : {
+        "formH1":"Форма Регистрации",
+        "firstName": "Имя",
+        "phoneNumber": "Номер Телефона",
+        "lastName": "Фамилия",
+        "companyName": "Название Компании",
+        "email": "Эл.Почта",
+        "password": "Пароль",
+        "submitRegBtn": "Зарегистрироваться",
+        "submitLogBtn": "Войти",
+        "howToSignIn": "Как вы хотите Войти?",
+        "howToSignUp": "Как вы хотите Зарегистрироваться?",
+        "requiredFirstName": "Необходимо Заполнить Имя",
+        "requiredLastName": "Необходимо Заполнить Фамилия",
+        "requiredEmail": "Необходимо Заполнить Электронную Почту",
+        "requiredPassword": "Необходимо Заполнить Пароль",
+        "invalidEmail": "Некорректная Эл.Почта",
+        "invalidPassword": "Пароль Должен Быть Больше 6 Символов",
+        "accountLogPrompt": "Уже есть аккаунт?",
+        "accountRegPrompt": "Ещё нет аккаунта?"
+    },
+    "addEvent": {
+        "addEventH1": "Добавить Новое Событие",
+        "eventNameLabel": "Название События:",
+        "eventNamePlaceholder": "Введите название...",
+        "eventDescriptionLabel": "Описания События:",
+        "eventDescriptionPlaceholder": "Введите описание...",
+        "eventPreviewLabel": "Добавьте фото для события:",
+        "eventDateLabel": "Когда будет событие:",
+        "startTimeLabel": "В который час начнется событие?:",
+        "endTimeLabel": "В который час завершится событие?:",
+        "eventPriceLabel": "Сколько будет стоить посещение?:",
+        "eventPricePlaceholder": "Введите стоимость",
+        "eventAddressLabel": "Введите местоположение события:",
+        "eventAddressPlaceholder": "Введите адрес...",
+        "submitButton": "Выложить"
+    },
+    "pageInfo": {
+        "loading": "Загрузка...",
+        "events": "События",
+        "soms": "сомов"
+    },
+    "notify": {
+        "eventCreated": "Событие успешно создано!",
+        "bookConfirm": "Бронь запрошена!"
+    }
+}
